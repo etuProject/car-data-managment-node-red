@@ -1,0 +1,84 @@
+[
+    {
+        "id": "a155523f.4a6b6",
+        "type": "tab",
+        "label": "Flow",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "8d1eb72c.c889e8",
+        "type": "ibmiot in",
+        "z": "a155523f.4a6b6",
+        "authentication": "apiKey",
+        "apiKey": "5212b708.67a9d8",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "",
+        "applicationId": "",
+        "deviceType": "+",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": true,
+        "allLogicalInterfaces": "",
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 160,
+        "y": 760,
+        "wires": [
+            [
+                "82f71e9f.bb881",
+                "be5d2254.fbecb"
+            ]
+        ]
+    },
+    {
+        "id": "82f71e9f.bb881",
+        "type": "debug",
+        "z": "a155523f.4a6b6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 450,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "be5d2254.fbecb",
+        "type": "file",
+        "z": "a155523f.4a6b6",
+        "name": "",
+        "filename": "CarProbeData.txt",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 450,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5212b708.67a9d8",
+        "type": "ibmiot",
+        "z": "",
+        "name": "",
+        "keepalive": "60",
+        "serverName": "f60kbc.messaging.internetofthings.ibmcloud.com/",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    }
+]
